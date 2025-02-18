@@ -52,6 +52,6 @@ Una vez que haya terminado los ejercicios, debe hacer un pull request desde su r
 
 Espere a que su pull request sea revisado y aprobado.
 
-_______________________________________________________
-basado de proyecto: FacultadDeIngenieria/tallergitprog1
+-------------------------------------------------------
+```basado de proyecto: FacultadDeIngenieria/tallergitprog1```
 -------------------------------------------------------
