@@ -31,29 +31,29 @@ git graph
 ```
 
 
-1. [] Crear una branch `experimento`. (Puede usar el comando `git branch experimento master`).
+1. [] Crear una branch `experimento`. (Puede usar el comando `git branch experimento main`).
 2. Moverse a la branch `experimento`. (Puede usar el comando `git checkout`).
 3. Verificar que se encuentra en la branch `experimento`. (Puede usar el comando `git branch`). 
 4. Agregarle el condimento `albahaca` **arriba del queso** al archivo `2.branchs/pizza.txt` y "commitee" los cambios. 
 5. Agregarle el condimento `oregano` **arriba de la albahaca** al archivo `2.branchs/pizza.txt` y "commitee" los cambios.
 6. Correr el comando `git graph` y observar el resultado. ¿Qué observa?
-7. Vuelva a la branch `master`.
+7. Vuelva a la branch `main`.
 8. Crear una branch `anana`. (Puede usar el comando `git checkout -b anana`).
 9. Agregarle el condimento `anana` **debajo del queso** al archivo `2.branchs/pizza.txt` y "commitee" los cambios.
 10. Correr el comando `git graph` y observar el resultado. ¿Qué observa?
-11. Vuelva a la branch `master`.
+11. Vuelva a la branch `main`.
 12. Agregue el condimento `cebolla` **debajo de la salsa** al archivo `2.branchs/pizza.txt` y "commitee" los cambios.
 13. Correr el comando `git graph` y observar el resultado. ¿Qué observa?
-14. Haga un merge de la branch `anana` a la branch `master`. (Puede usar el comando `git merge anana`).
+14. Haga un merge de la branch `anana` a la branch `main`. (Puede usar el comando `git merge anana`).
 15. Correr el comando `git graph` y observar el resultado. ¿Qué observa?
-16. ¿Qué branches están "mergeadas" a master? (Puede usar el comando `git branch --merged`).
-17. Haga un merge de la branch `experimento` a la branch `master`. (Puede usar el comando `git merge experimento`).
+16. ¿Qué branches están "mergeadas" a main? (Puede usar el comando `git branch --merged`).
+17. Haga un merge de la branch `experimento` a la branch `main`. (Puede usar el comando `git merge experimento`).
 18. Correr el comando `git graph` y observar el resultado. ¿Qué observa?
 19. ¿Tuvo que hacer un merge manual, o git lo hizo automáticamente? ¿Por qué?
-20. ¿Qué branches están "mergeadas" a master? (Puede usar el comando `git branch --merged`).
+20. ¿Qué branches están "mergeadas" a main? (Puede usar el comando `git branch --merged`).
 21. Elimine la branch `anana`. (Puede usar el comando `git branch -d anana`).
 22. Elimine la branch `experimento`. (Puede usar el comando `git branch -d experimento`).
-23. ¿Qué branches están "mergeadas" a master? (Puede usar el comando `git branch --merged`).
+23. ¿Qué branches están "mergeadas" a main? (Puede usar el comando `git branch --merged`).
 24. Correr el comando `git graph` y observar el resultado. ¿Qué observa?
 25. Crear un tag `pizza` en el último commit. (Puede usar el comando `git tag -a pizza -m "Receta de la pizza.""`).
 26. Ver los tags creados. (Puede usar el comando `git tag`).

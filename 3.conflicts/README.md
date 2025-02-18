@@ -14,16 +14,16 @@ En este archivo, se va a guardar las respuestas teóricas y algunos resultados d
 ### 3.2. Ejercicio Práctico
 
 1. Crear un archivo `nombre_apellido.txt` dentro de la carpeta `3.conflicts`.
-2. Crear una nueva branch `suprema` a partir de la branch `master`. (Puede usar el comando `git checkout -b suprema`).
+2. Crear una nueva branch `suprema` a partir de la branch `main`. (Puede usar el comando `git checkout -b suprema`).
 3. Moverse a la branch `suprema`. (Puede usar el comando `git checkout`).
 4. Cambiar el contenido del archivo `3.conflicts/milanesa.txt` donde dice lomo por `pollo`.
 5. "Commitear" los cambios. (Puede usar el comando `git commit -am "Cambio de lomo a pollo"`).
-6. Moverse a la branch `master`. (Puede usar el comando `git checkout`).
-7. Crear una nueva branch `bife` a partir de la branch `master`. (Puede usar el comando `git checkout -b bife`).
+6. Moverse a la branch `main`. (Puede usar el comando `git checkout`).
+7. Crear una nueva branch `bife` a partir de la branch `main`. (Puede usar el comando `git checkout -b bife`).
 8. Moverse a la branch `bife`. (Puede usar el comando `git checkout`).
 9. Cambiar el contenido del archivo `3.conflicts/milanesa.txt` donde dice lomo por `bife`. 
-10. Haga un `git diff master suprema` y un `git diff master bife`. ¿Qué observa? 
-11. Moverse a la branch `master`. Corra un `git status`, ¿qué observa?
+10. Haga un `git diff main suprema` y un `git diff main bife`. ¿Qué observa? 
+11. Moverse a la branch `main`. Corra un `git status`, ¿qué observa?
 12. Ejecute `git merge bife`. Funcionó?
 13. Ejecute `git merge suprema`. Funcionó?
 14. Ejecute `git status`. Que observa?

@@ -44,11 +44,14 @@ git commit -m "Resuelto ejercicio 1"
 git push
 ```
 
-Luego de resolver **todos** los ejercicios y hacer un push de cada uno, debe hacer un pull request desde su repositorio remoto a este repositorio (). Tiene una guía para hacerlo [aquí](https://docs.github.com/es/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).
+Luego de resolver **todos** los ejercicios y hacer un push de cada uno, debe hacer un pull request desde su repositorio remoto a este repositorio (fjimenezg/tallergit). Tiene una guía para hacerlo [aquí](https://docs.github.com/es/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).
 
 ### Terminé los ejercicios, ¿ahora qué?
 
-Una vez que haya terminado los ejercicios, debe hacer un pull request desde su repositorio remoto a este repositorio (). Tiene una guía para hacerlo [aquí](https://docs.github.com/es/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).
+Una vez que haya terminado los ejercicios, debe hacer un pull request desde su repositorio remoto a este repositorio (fjimenezg/tallergit). Tiene una guía para hacerlo [aquí](https://docs.github.com/es/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).
 
 Espere a que su pull request sea revisado y aprobado.
 
+_______________________________________________________
+basado de proyecto: FacultadDeIngenieria/tallergitprog1
+-------------------------------------------------------
