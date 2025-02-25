@@ -1,0 +1,61 @@
+CUESTIONARIO
+
+¿Qué es un branch?
+Un branch (rama) en Git es una línea de desarrollo independiente que permite
+ trabajar en nuevas características sin afectar la rama principal.
+
+¿Por qué pueden ser útiles los branches?
+Son útiles porque permiten desarrollar nuevas funcionalidades, corregir
+errores o probar cambios sin modificar el código principal hasta que se
+confirme su estabilidad.
+
+¿Cómo se crea una branch?
+Se puede crear con el siguiente comando: git branch nombre_rama
+
+¿Cómo se cambia a una branch?
+Se usa el siguiente comando: git checkout nombre_rama
+
+¿Cómo se elimina una branch?
+Para eliminar una branch local, se usa:git branch -d nombre_rama
+y si no se elimina con este comando reeplazamos la d minucula por mayuscula
+
+¿Cómo se crea una branch y se cambia a ella en un solo paso?
+git checkout -b nombre_rama
+O con la versión más nueva:git switch -c nombre_rama
+
+¿Qué es un merge?
+Es la acción de combinar los cambios de una branch con otra, generalmente
+fusionando una rama de desarrollo con la principal.
+
+¿Cómo se realiza un merge?
+Primero, cambia a la rama en la que quieres fusionar los cambios:
+git checkout main
+luego ejecutamos:git merge nombre_rama
+
+¿Qué es un tag?
+Un tag (etiqueta) es un marcador en Git que se usa para señalar 
+versiones específicas
+en el historial de commits, como versiones de software.
+
+¿Cómo se crea un tag?git tag -a nombre_tag -m "Mensaje del tag"
+Luego, se puede ver el tag con:
+git show nombre_tag
+_______________________________________________________________________________
+
+Al correr el comando git graph observamos que la rama experimento tiene
+dos commits adicionales
+__________________________________________________________________________
+podemos notar que anana y experimento tienen líneas de desarrollo separadas
+a partir de main.
+_______________________________________________________________________________
+
+Ahora podemos ver claramente cómo las ramas experimento y anana se han 
+desarrollado en paralelo a main.
+____________________________________________________________________________________
+luego de hacer el merge de la branch experimento a la branch main Eso 
+significa que Git detectó cambios en ambas ramas (main y anana) y necesita
+que resolver  el conflicto 
+_____________________________________________________________________________________
+tuve que manualmente resolver el conflicto ya que git no lo hizo 
+actumaticamente 
+Ejercicio completado por [santiago urbano]
