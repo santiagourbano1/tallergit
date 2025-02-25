@@ -1,0 +1,192 @@
+Repuesta preguntas:
+°¿Cómo se inicializa un repositorio local?
+git init
+
+°¿Cómo hago para que un directorio deje de ser controlado por git?
+rm -rf .git
+
+°Si agrego un archivo a un directorio controlado por git, ¿está siendo controlado por git?
+
+°¿Qué comando se usa para agregar un archivo al repositorio local?
+git add archivo.txt
+
+°¿Cómo determino qué archivos fueron modificados?
+git status
+
+°¿Qué comando se usa para hacer un commit?
+git commit -m "Mensaje del commit"
+
+°¿Qué es un commit?
+Es un punto de control en el historial del repositorio que guarda los 
+cambios realizados en los archivos.
+
+________________________________________________________________________________________________________________________________________________________________
+
+
+luego de hacer git status en sandwich.txt aparece como modificado, pero aún
+no agregado al área de staging.
+
+luego de hacer git add sandwich.txt  aparece en la sección de "Changes
+to be committed", es decir se subio al repositorio local
+
+luego de hacer commit con el mensaje agrego mi sandwich.txt aparece que
+esta en rojo pero luego de hacer el git status el mensaje indico que no hay
+cambios pendientes.
+
+________________________________________________________________________________--------------------------------------------------------------------------------------------------------------------------------------------------
+
+commit 23d26634c077f5f96ea319d65d463dec2e91f5cc
+Author: santiago urbano <jeiver.3762012428@ucaldas.edu.co>
+Date:   Mon Feb 24 16:37:35 2025 -0500
+
+    Agrego salsas
+
+commit 374b2eb328f3d459c3a5a58a65ad8d0307506326
+Author: santiago urbano <jeiver.3762012428@ucaldas.edu.co>
+Date:   Mon Feb 24 16:34:04 2025 -0500
+
+    Agrego mi sandwich.txt
+
+commit fafdc7f0bd9a9a556a616c14ff783605909f3803
+Author: Franklin Jimenez <f.jimenezg@hotmail.com>
+Date:   Mon Feb 17 23:45:03 2025 -0500
+
+    cambio readme.md
+
+commit 5d6dc694d95afb33114a820339acfeeab38cc42a
+Author: Franklin Jimenez <f.jimenezg@hotmail.com>
+Date:   Mon Feb 17 23:39:56 2025 -0500
+
+    cambio de rama master a main en documentación
+
+commit 3f74d4d0db34f6f6fbcd9f8cfa4b157dccdd48d7
+Author: Franklin Jimenez <f.jimenezg@hotmail.com>
+Date:   Mon Feb 17 23:17:02 2025 -0500
+
+    primer commit
+
+git log
+°Explicación:
+como podemos ver aparecen los commit  del más reciente al más antiguo
+
+
+23d2663 Agrego salsas
+374b2eb Agrego mi sandwich.txt
+fafdc7f cambio readme.md
+5d6dc69 cambio de rama master a main en documentación
+3f74d4d primer commit
+
+
+git log --oneline 
+°Este comando guarda en el archivo nombre_apellido.txt un resumen de los
+commits en una sola línea por cada uno.
+Muestra solo el identificador corto del commit y el mensaje asociado.
+como tambien Sirve para obtener un historial compacto y fácil de leer, útil
+cuando quiero ver rápidamente los commits sin demasiada información adicional.
+  
+commit 23d26634c077f5f96ea319d65d463dec2e91f5cc
+Author: santiago urbano <jeiver.3762012428@ucaldas.edu.co>
+Date:   Mon Feb 24 16:37:35 2025 -0500
+
+    Agrego salsas
+
+ 1.commit/sandwich.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 374b2eb328f3d459c3a5a58a65ad8d0307506326
+Author: santiago urbano <jeiver.3762012428@ucaldas.edu.co>
+Date:   Mon Feb 24 16:34:04 2025 -0500
+
+    Agrego mi sandwich.txt
+
+ 1.commit/sandwich.txt | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+commit fafdc7f0bd9a9a556a616c14ff783605909f3803
+Author: Franklin Jimenez <f.jimenezg@hotmail.com>
+Date:   Mon Feb 17 23:45:03 2025 -0500
+
+    cambio readme.md
+
+ README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 5d6dc694d95afb33114a820339acfeeab38cc42a
+Author: Franklin Jimenez <f.jimenezg@hotmail.com>
+Date:   Mon Feb 17 23:39:56 2025 -0500
+
+    cambio de rama master a main en documentación
+
+ 2.branchs/README.md   | 16 ++++++++--------
+ 3.conflicts/README.md | 10 +++++-----
+ README.md             |  7 +++++--
+ 3 files changed, 18 insertions(+), 15 deletions(-)
+
+commit 3f74d4d0db34f6f6fbcd9f8cfa4b157dccdd48d7
+Author: Franklin Jimenez <f.jimenezg@hotmail.com>
+Date:   Mon Feb 17 23:17:02 2025 -0500
+
+    primer commit
+
+ .gitignore               |  2 ++
+ 1.commit/README.md       | 55 ++++++++++++++++++++++++++++++++++
+ 1.commit/sandwich.txt    |  4 +++
+ 2.branchs/README.md      | 78 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 2.branchs/pizza.txt      |  3 ++
+ 3.conflicts/README.md    | 48 +++++++++++++++++++++++++++++
+ 3.conflicts/milanesa.txt |  2 ++
+ README.md                | 54 +++++++++++++++++++++++++++++++++
+ 8 files changed, 246 insertions(+)
+
+git log --stat
+°Este comando guarda en el archivo nombre_apellido.txt un historial
+de commits con estadísticas de cambios.
+Además del identificador y el mensaje del commit, muestra qué archivos fueron
+modificados y cuántas líneas fueron añadidas o eliminadas en cada uno.
+Es útil para ver de manera más detallada qué cambios se hicieron en cada
+commit sin necesidad de ver el contenido exacto de los archivos.
+
+
+
+
+
+
+
+git diff, el comando me muestra las diferencias entre la versión actual
+de mis archivos y la última versión registrada en el repositorio 
+
+
+°luego de cambiar sandwich2.txt a sandwich2_feo.txt
+
+Explicación de los cambios en git status y git log --oneline
+Antes de hacer el commit (git status):
+
+°Git estaba detectando el cambio como una "renombración".
+Mostraba algo como:
+renamed: sandwich2.txt -> sandwich2_feo.txt
+Esto significa que Git no trata el renombrado como una eliminación
+y creación de un nuevo archivo, sino como un solo cambio.
+
+°Después del commit (git status): nos dimos cuenta de que ya no hay cambios 
+
+°luego de borrar el archivo sandwich2_feo.txt y hacer git status
+se elimina del directorio de trabajo y se marca para ser eliminado
+en el próximo commit.
+
+°y despues de hacer el commit Se registra un nuevo commit en el historial
+con el mensaje "Borro sandwich2_feo.txt"
+
+°una vez realizado el commi y digitando git status
+miramos que todos los cambios han sido guardados y el repositorio está limpio.
+
+°el git log --oneline Aparece un nuevo commit reflejando la eliminación del
+archivo
+
+
+°Al revisar git log --stat, veo claramente cómo han cambiado los archivos
+en cada commit. Primero, renombré un archivo, luego lo eliminé y, en commits
+anteriores, agregué contenido. Esta información me ayuda a entender
+la evolución de mi proyecto sin necesidad de revisar cada cambio en detalle
+con git diff.
+---------------------------------------------------------------------------------
+ejercicio terminado
