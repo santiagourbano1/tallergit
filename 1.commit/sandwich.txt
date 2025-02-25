@@ -1,7 +1,4 @@
 pan
-mayonesa
 queso
-tomate
-lechuga
-carne
+medallón
 pan
