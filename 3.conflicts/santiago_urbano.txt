@@ -1,0 +1,47 @@
+
+                       CUESTIONARIO
+
+1.¿Qué es un conflicto? ¿Cuándo ocurre? ¿Es bueno o malo?
+Un conflicto en Git ocurre cuando intento fusionar dos ramas que han
+modificado la misma parte de un archivo de manera diferente. Como Git
+no sabe cuál versión conservar, me obliga a resolver el problema manualmente.
+No diría que un conflicto es bueno o malo, simplemente pasa cuando varias
+personas trabajan en paralelo. Lo importante es saber cómo resolverlos
+para que no se conviertan en un problema.
+
+2.¿Se puede evitar un conflicto? ¿Cómo?
+No siempre se pueden evitar, pero sí reducir con algunas buenas prácticas.
+Yo suelo hacer git pull antes de empezar a trabajar, así tengo los últimos
+cambios y evito pisar cosas sin querer. También intento coordinar con mi
+equipo para que cada uno edite archivos o partes diferentes del código. Otra
+buena práctica es hacer merges con frecuencia, en lugar
+de acumular muchos cambios y fusionarlos todos de golpe.
+______________________________________________________________________________________________
+
+Haga un git diff main suprema y un git diff main bife. ¿Qué observa?
+podemos observar efectivamente el cambio que hicimos en suprema
+cambie "lomo" por "pollo", y en bife cambie "lomo" por "bife".
+____________________________________________________________________________________-
+
+Moverse a la branch main. Corra un git status, ¿qué observa?
+observamos que No hay cambios en seguimiento en main, solo
+santiago_urbano.txt sin trackear.
+_________________________________________________________________________________-
+
+Ejecute git merge bife. Funcionó?
+El merge de bife en main fue exitosohubo conflictos y simplemente avanzó
+la rama main hasta bife.
+______________________________________________________________________________________
+
+Ejecute git merge suprema. Funcionó?
+no funciono ya que hubo un conflicto porque Git no puede decidir
+automáticamente entre pollo (de suprema) y bife (de bife).
+______________________________________________________________________________________
+
+Ejecute git status. Que observa?
+una ves ejecutado git status podemos ver que el problema que teniamos
+en milanesa a la hora del merge ya se soluciono 
+_____________________________________________________________________________________-
+Vea el contenido del archivo 3.conflicts/milanesa.txt. ¿Qué observa?
+Eso significa que resolvimos el conflicto manualmente y combiamos ambas
+versiones (bife y pollo).
