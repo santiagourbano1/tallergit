@@ -45,3 +45,9 @@ ________________________________________________________________________________
 Vea el contenido del archivo 3.conflicts/milanesa.txt. ¿Qué observa?
 Eso significa que resolvimos el conflicto manualmente y combiamos ambas
 versiones (bife y pollo).
+_______________________________________________________________________________________
+Aborte el merge. (Puede usar el comando git merge --abort).
+
+Eso significa que ya finalizamos el merge y no hay nada que abortar.
+Como ya resolvimos el conflicto y confirmamos los cambios, Git no está
+en un estado de "fusión en proceso".
